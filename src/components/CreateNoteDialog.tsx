@@ -50,10 +50,7 @@ const CreateNoteDialog = (props: Props) => {
         uploadToFirebase.mutate(note_id);
         router.push(`/notebook/${note_id}`);
       },
-      onError: (error) => {
-        console.error(error);
-        window.alert("Failed to create new notebook");
-      },
+      
     });
   };
 
